@@ -1,11 +1,25 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import Employee from './components/Employee';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  console.log('we are about to list the employees');
+  const showEmployee = true;
   return (
-    <p>Hello there</p>
+    <div className="App">
+      {console.log('inside the return')}
+      {showEmployee ? (
+      <>
+          <Employee />
+          <Employee />
+          <Employee />
+          <Employee />
+          <Employee />
+      </>
+      ) : (
+        <p>You cannot see the employees</p>
+      )
+      };
+    </div>
   );
 }
 
