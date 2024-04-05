@@ -1,5 +1,4 @@
 function Employee(props) {
-    props.name = 'something'
     return (
         <>
         <h3>Employee {props.name}</h3>
